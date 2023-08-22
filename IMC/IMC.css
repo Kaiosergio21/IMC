@@ -1,0 +1,51 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+
+ transform: translate(-1%, 150%);
+     
+ 
+  
+
+}
+
+.botão{
+  width: 270px;
+  color: brown;
+  background-color: rgb(255, 255, 255);
+
+  transform: translate(0,80%, 90%);
+}
+
+.container{
+  background-color: brown;
+  border-radius:20px;
+  
+  padding: 4rem;
+  
+  
+
+  transform: translate(-1%, -60%)
+}
+
+.title{
+  display:flex ;
+  justify-items: center;
+  color: aliceblue;
+}
+
+span{
+  color: aliceblue;
+  
+ 
+ 
+}
+
+.result{
+  color: aliceblue;
+}
+
+

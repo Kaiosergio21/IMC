@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="IMC.css">
+</head>
+<body>
+    <main>
+    <div class="container">
+    <div id="IMC" >
+        <h1 class="title">Calculadora IMC</h1>
+           <input type='number' name="peso" id="weight"> 
+              <strong><span>kg</span></strong>
+     </div>     
+      <div>   
+           <input type='number' name="altura" id="height">
+              <strong> <span>M</span></strong> 
+      </div >
+           <strong><input class=botão type="button" value="IMC" onclick="IMC()"></strong>
+           
+     <strong><div id="resultado" class="result"></div></strong>
+      
+      
+     </div>
+    </div>
+    </main>
+      <script>
+        let peso=document.querySelector('#weight')
+            let altura=document.querySelector('#height')
+            const resultado=document.querySelector('#resultado')
+            
+            let descrição="";
+
+         function IMC(){
+            
+             let peso = Number(weight.value)
+             let altura = Number(height.value)
+             let result = (peso / (altura * altura)).toFixed(1);
+             
+
+             if(IMC < 18,5){
+                descrição= "você está a baixo do peso"
+             }else if (IMC <= 25,0){
+                descrição= "você está no peso"
+             } else if(IMC <= 30,0 ){
+                descrição="você está com obesidade"
+
+             } else if(IMC <= 40,0){
+                descrição="você está com sobrepeso"
+
+             }
+
+             resultado.textContent= " Seu IMC é " +result+" você está " +descrição;
+
+             
+
+
+
+
+             
+             
+ 
+         }
+
+         
+      </script>
+</body>
+</html>
