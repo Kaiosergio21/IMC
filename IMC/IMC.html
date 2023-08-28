@@ -40,19 +40,19 @@
              let result = (peso / (altura * altura)).toFixed(1);
              
 
-             if(IMC < 18,5){
+             if(IMC <= 18,5){
                 descrição= "você está a baixo do peso"
-             }else if (IMC <= 25,0){
+             } else if (IMC >= 25,0){
                 descrição= "você está no peso"
-             } else if(IMC <= 30,0 ){
+             } else if(IMC >= 30,0 ){
                 descrição="você está com obesidade"
 
-             } else if(IMC <= 40,0){
+             } else if (IMC >= 40,0){
                 descrição="você está com sobrepeso"
 
              }
 
-             resultado.textContent= " Seu IMC é " +result+" você está " +descrição;
+             resultado.innerHTML= " Seu IMC é " +result+descrição;
 
              
 
